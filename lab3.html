@@ -29,10 +29,10 @@
         header {
             background-color: rgb(0, 221, 255);
             color: white;
-            text-align: center;
+            text-align: right;
             padding: 20px 0;
             box-shadow: 0 4px 15px -2px gray;
-            position: sticky;
+            position:relative;
             top: 0;
         }
 
@@ -43,14 +43,12 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px -2px gray;
         }
-
-        #box1 {
-            background-color: rgb(0, 191, 255);
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 4px 15px -2px gray;
-            color: whitesmoke;
+        #box1{
+            background-color:  rgb(0, 221, 255);
+            color:rgb(121, 9, 18);
+            position: relative;
+            right:1100px;
+            top:30px;
         }
 
         p {
@@ -83,7 +81,26 @@
             background-color: rgb(179, 223, 234);
 
         }
+        #box2:hover{
+        box-shadow:10px 10px 200px ;
+        color: blueviolet;
+        background-color: rgb(255, 213, 0);
+        cursor: pointer;
+        }
+        #box3:hover{
+        box-shadow:10px 10px 200px ;
+        color: blueviolet;
+        background-color: rgb(255, 213, 0);
+        cursor: pointer;
+        }
+        #box4:hover{
+        box-shadow:10px 10px 200px ;
+        color: blueviolet;
+        background-color: rgb(255, 213, 0);
+        cursor: pointer;
+        }
 
+        
         #box2 {
             grid-row: 1/2;
             grid-column: 1/2;
@@ -115,8 +132,6 @@
             box-shadow: 0 4px 15px -2px gray;
 
         }
-
-
         #img {
             position: relative;
             left: 900px;
@@ -178,10 +193,14 @@
         #CONTACT {
             background-color: white;
             padding: 20px;
+            height: 300px;
+            width: 500px;
             margin: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 15px -2px gray;
             text-align: center;
+            position: relative;
+            left:340px;
         }
 
         #backtop {
@@ -214,14 +233,15 @@
             cursor: pointer;
             font-size: large;
             text-align: right;
-            position: fixed;
+            padding-left: fixed;
             right: 40px;
             bottom: auto;
-            position: absolute;
-            z-index: 100;
+            position:sticky;
+            left: 1100px;
 
 
         }
+        
 
         h1 {
             animation: colorChange 4s infinite;
@@ -242,11 +262,28 @@
 
             100% {color: rgb(181, 60, 175);}
         }
+        #button1{
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: large;
+            text-align: center;
+            position:relative;
+            left:70px;
+            right: 40px;
+            bottom: auto;
+            position: absolute;
+            z-index: 100;
+        }
     </style>
 </head>
 
 <body id="bodytop"></body>
-<div class="box3" id="box1">
+<header>
+<div id="box1">MY PORTFOLIO</div>
     <nav>
         <ul>
             <nav id="nav">
@@ -256,7 +293,7 @@
             </nav>
         </ul>
     </nav>
-</div>
+
 </header>
 <h1 class="title">Hello!!! I am web Development student </h4>
 
@@ -281,7 +318,7 @@
             <div class="Skills">
                 <div class="box" id="box2">HTML</div>
                 <div class="box" id="box3">CSS</div>
-                <div class="box" id="box4">PYTHON</div>
+                <div class="box" id="box4">PYTHON </div>
             </div>
         </div>
         <div id="PROJECT">
@@ -293,7 +330,7 @@
         </div>
         <br /><br />
 
-        <h3> CONTACT DETAILS </h3>
+        <h3> CONTACT DETAILS: </h3>
         <div id="CONTACT">
             <label for="name"> name:</label>
             <input id="name" type="" text />
@@ -304,7 +341,7 @@
             <label> Message:</label>
             <textarea rows="10" cols="30"></textarea>
             <br /><br />
-            <button type="Send"> Send</button>
+            <button type="Send" id="button1"> Send</button>
         </div>
         <br><br />
         <a href="#bodytop" input type="back at top" value="Back at Top" class="nav-btn" id="button2">Back to Top</a>
@@ -325,9 +362,3 @@
 
 
 </html>
-    
-
-  
-
- 
-  
